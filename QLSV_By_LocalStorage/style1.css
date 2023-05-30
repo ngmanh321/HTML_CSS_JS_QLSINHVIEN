@@ -1,0 +1,44 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family:Montserrat, sans-serif;
+	background: url(3.jpg);
+	color: #4DFF47;
+	font-size: 15px;
+}
+div.form-student , div.list-student{
+	width: 550px;
+	border: 1px solid #DFCF1F;
+	margin: 25px;
+	padding: 10px;
+	float: left;
+}
+div.list-student{
+	width: 800px;
+	background: url(4.jpg);
+	color: #5F10FF;
+
+}
+
+
+h3{
+	padding: 0px;
+	margin-top:0px ;
+}
+div.form-student label{
+	width: 100px;
+	float: left;
+}
+
+div.form-student input[type="text"] , button{
+	margin-bottom: 10px;
+	width: 200px;
+	padding: 5px;
+}
+
+td{
+	text-align: center;
+}
+.error{
+	color: red;
+}

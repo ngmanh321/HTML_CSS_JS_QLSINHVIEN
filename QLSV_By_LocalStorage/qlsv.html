@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Quản lí sinh  </title>
+   <link rel="stylesheet" type="text/css" href="style1.css">
+</head>
+<body onload="render()">
+    <input type="hidden" id="index1">
+    <input type="hidden" id="gender1">
+
+
+    <div class="form-student">
+        <h3>Thông tin sinh viên</h3>
+        <label> Họ và tên </label>
+        <input type="text" id="fullname"> &nbsp
+        <span id="fullname-error" class="error"></span>
+        <br/>
+
+         <label> Email</label>
+        <input type="text" id="email"> &nbsp
+        <span id="email-error" class="error"></span>
+        <br/>
+         <label>Số điện thoại </label>
+        <input type="text" id="phone" placeholder="VD:0123456789">&nbsp
+        <span id="phone-error" class="error"></span> 
+        <br/>
+         <label>Địa chỉ </label>
+        <input type="text" id="address"> &nbsp
+        <span id="address-error" class="error"></span>
+        <br/>
+         <label>Điểm TB  </label>
+        <input type="text" id="point" placeholder="VD: 1.0 " > &nbsp
+        <span id="point-error" class="error" ></span>
+        <br/>
+         <label> Giới tính </label>
+
+        <input type="radio" name="gender" id="male" value="Nam">Nam &nbsp&nbsp
+        <input type="radio" name="gender" id="famale" value="Nữ">Nữ       
+         &nbsp
+        <span id="gender-error" class="error"></span>
+        <br/>  
+        <br/>
+        <button id="save" onclick="save()" style="background-color: #FFA01A">Save &nbsp&nbsp&nbsp&nbsp</button>
+        <button id="edit" style="display: none" onclick="change()">Save Edit &nbsp&nbsp&nbsp&nbsp</button> &nbsp&nbsp&nbsp&nbsp
+        <button id="reset" onclick="reset()" style="background-color:#2AFF50 ; ">Reset</button>
+        <a href="qlsv.html"><button  onclick="clearall()" style="background-color: #D4ACFF" >Clear All Datas</button></a>&nbsp&nbsp&nbsp&nbsp&nbsp
+        <a href="index.html"><button style="background-color: #FF3F7E" >Đăng xuất</button></a>       
+    </div>
+
+
+    <div class="list-student">
+          <h3>Danh sách sinh viên</h3>
+      <table id="list" width="780" border="1" cellpadding="0" cellpadding="0">
+
+      </table>    
+    </div>
+
+    <script src='https://cdn.jsdelivr.net/g/lodash@4(lodash.min.js+lodash.fp.min.js)'></script>
+    <script src="student.js"></script>
+</body>
+</html>
